@@ -1,1 +1,0 @@
-Please find the respective information about the supported boards on the subpages.
