@@ -2,7 +2,7 @@
 This pages summarizes information about the XMC 2Go evaluation board and its implementation for the Arduino IDE. The XMC 2Go board consists of a XMC1100 microcontroller with a debugger implemented by a XMC4200 microcontroller. The Infineon homepage of the board can be found [here](https://www.infineon.com/cms/de/product/evaluation-boards/KIT_XMC_2GO_XMC1100_V1/productType.html?productType=db3a304443537c4e01436ccecb5d154f#ispnTab9).
 
 # Arduino Pin Out
-The pin layout of the XMC 2Go for the Arduino IDE is as follows:
+The pin layout of the XMC 2Go for the Arduino IDE is as follows (the original file can be found [here](https://github.com/Infineon/Assets/blob/master/Pictures/XMC%202Go_PO.jpg)):
 
 ![XMC 2Go Pin Out for Arduino](https://github.com/Infineon/Assets/blob/master/Pictures/XMC%202Go_PO.jpg)
 
