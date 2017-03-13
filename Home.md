@@ -1,5 +1,5 @@
 # Welcome
-Welcome to the XMC-for-Arduino wiki! You'll find information about the currently supported boards (XMC 2Go, XMC1100 boot kit, XMC4700 relax kit) as well as additional information on these pages. 
+Welcome to the XMC-for-Arduino wiki! You'll find information about the currently supported boards ([XMC 2Go](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC-2Go), [XMC1100 Boot Kit](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC1100-Boot-Kit), and [XMC4700 Relax Kit](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC4700-Relax-Kit)) as well as additional information on these pages. 
 Please have a look on the sidebar to find the related information and visit our site for makers [here](www.infineon.com/4makers) with additional information about other components as well as solutions.
 
 ## Current Status
