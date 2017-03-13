@@ -13,7 +13,7 @@ The pin layout of the XMC 2Go for the Arduino IDE is as follows (the original fi
 * ESD and reverse current protection
 * 2 user LEDs
 * Pin Header 2x8 Pins suitable for Breadbord
-* Ultra-small evaluation boards (38,5 mm x 14 mm)
+* Ultra-small evaluation board (38,5 mm x 14 mm)
 
 # PCB Design Data
 In case you want to change the design or reuse it for your own projects, please find the XMC 2Go board design for EAGLE under the following link:
