@@ -1,17 +1,20 @@
 # Welcome
-Welcome to the XMC-for-Arduino wiki! You'll find information about the currently supported boards (XMC 2Go, XMC1100 boot kit, XMC4700 relax kit) as well as additional information on these pages.
+Welcome to the XMC-for-Arduino wiki! You'll find information about the currently supported boards (XMC 2Go, XMC1100 boot kit, XMC4700 relax kit) as well as additional information on these pages. 
+Please have a look on the sidebar to find the related information.
 
 ## Current Status
 * Basic features implemented
 * No underlying features, e.g. additional functionalities of the XMC microcontroller family, implemented in Arduino libraries
 
 ## The XMC Microcontroller Family
-Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The microcontroller family based on ARM® Cortex®-M cores is dedicated to applications in the segments of power conversion, factory and building automation, transportation and home appliances.
+Infineon has designed the XMC microcontrollers for real-time critical applications with an industry-standard core. The microcontroller family based on ARM® Cortex®-M cores is dedicated to applications in the segments of power conversion, factory and building automation, transportation and home appliances. 
 Find out more on the respective homepage of the XMC family:
 
 [https://www.infineon.com/XMC](https://www.infineon.com/XMC)
 
-### XMC1100 Key Features
+We strongly encourage you to extend the list of applications by your support. If you feel like, please share your ideas, projects as well as software examples with the community to see what the XMC is capable to do.
+
+### XMC1000 Key Features
 * ARM® Cortex®-M0 core, up to 48MHz and 80 CoreMark
 * Control peripherals like PWM timers run on up to 96MHz
 * The MATH co-processor boosts standard Cortex®-M0 computing performance enabling divisions and trigonometric operations like SIN and COS
