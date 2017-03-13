@@ -1,6 +1,6 @@
 ## Overview
 This repository contains the integration of [Infineon's](https://www.infineon.com/) XMC microcontrollers into the [Arduino IDE](https://www.arduino.cc/en/main/software).
-Supported boards by this repository are listed under 'Microcontroller Boards' in the following section.
+Supported boards by this repository are listed under 'Microcontroller Boards' in the following section or in the sidebar. Boards currently in development are not listed here at the moment.
 
 ## Installation Instructions
 
