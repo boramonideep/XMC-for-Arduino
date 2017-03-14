@@ -1,5 +1,5 @@
 * [Home](https://github.com/Infineon/XMC-for-Arduino/wiki)  
-* Issues
+* [Issues](https://github.com/Infineon/XMC-for-Arduino/wiki/Issues)
 * [Implementation in Arduino IDE](https://github.com/Infineon/XMC-for-Arduino/wiki/Implementation-in-Arduino-IDE)  
 * Supported Boards
  * [XMC 2Go](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC-2Go)
