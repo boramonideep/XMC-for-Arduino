@@ -3,7 +3,9 @@ This pages summarizes information about the XMC4700 Relax Kit evaluation board a
 Please note that there exist versions with 5 V and 3.3V. Please be careful which version you have and use with your respective shields. The one described here means the 5 V version as this one is compatible with Arduino shields designed for the 5 V systems.
 
 # Arduino Pin Out
-The pin layout of the XMC4700 Relax Kit for the Arduino IDE will follow soon.
+The pin layout of the XMC4700 Relax Kit (for 5V Shields) for the Arduino IDE is as follows (the original file can be found [here](https://github.com/Infineon/Assets/blob/master/Pictures/XMC%204700_RelaxKit_5VShields_PO.jpg)):
+
+![XMC4700 Relax Kit (for 5V Shields) Pin Out for Arduino](https://github.com/Infineon/Assets/blob/master/Pictures/XMC%204700_RelaxKit_5VShields_PO.jpg)
 
 # Key Features
 * XMC4700-F144 Microcontroller based on ARM® Cortex®-M4 @ 144MHz, 2MB Flash and 352KB RAM
