@@ -2,6 +2,9 @@
 * [Issues](https://github.com/Infineon/XMC-for-Arduino/wiki/Issues)
 * [Implementation in Arduino IDE](https://github.com/Infineon/XMC-for-Arduino/wiki/Implementation-in-Arduino-IDE)  
 * Supported Boards
-  * [XMC 2Go](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC-2Go)
+  * [XMC1100 XMC 2Go](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC-2Go)
+  * [XMC1100 H-Bridge 2Go](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC1100-H%E2%80%90Bridge-2Go)
   * [XMC1100 Boot Kit](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC1100-Boot-Kit)
+  * [XMC1300 Boot Kit](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC1300-Boot-Kit)
+  * [XMC1300 Sense2GoL](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC1300-Sense2GoL)
   * [XMC4700 Relax Kit](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC4700-Relax-Kit)
