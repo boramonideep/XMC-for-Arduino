@@ -9,7 +9,9 @@ The pin layout of the XMC 2Go for the Arduino IDE is as follows (the original fi
 # Key Features
 * XMC1100 (ARM® Cortex™-M0 based)
 * On-board J-Link Lite Debugger (implemented with XMC4200)
-* Power over USB (Micro USB) or 3.3 V pin possible
+* Power over USB (Micro USB) or: 
+  * 3.3 V pin with direct connection to XMC1100 and IFX9201SG (compare schematics in [Board User Manual](https://www.infineon.com/dgdl/Infineon-H-Bridge_Kit_2Go_UM-UM-v01_01-EN.pdf?fileId=5546d46250cc1fdf015133ee879d3696))
+  * 5 V pin with direct connection to 3.3 V Regulator (converting 5V to 3.3 V, Figure 17 in [Board User Manual](https://www.infineon.com/dgdl/Infineon-H-Bridge_Kit_2Go_UM-UM-v01_01-EN.pdf?fileId=5546d46250cc1fdf015133ee879d3696))
 * ESD and reverse current protection
 * 2 user LEDs
 * Pin Header 2x8 Pins suitable for Breadbord
@@ -17,8 +19,8 @@ The pin layout of the XMC 2Go for the Arduino IDE is as follows (the original fi
 * Reverse polarity protection
 
 # Board Information, Datasheet and Additional Information
-A PDF summarizing the features and layout of the XMC 2Go board is stored on the Infineon homepage [here](https://www.infineon.com/dgdl/Infineon-H-Bridge_Kit_2Go_UM-UM-v01_03-EN.pdf?fileId=5546d46250cc1fdf015133ee879d3696).
-The datasheet of the H-Bridge IFX9201 can be found [here](https://www.infineon.com/dgdl/Infineon-IFX9201SG-DS-v01_01-EN.pdf?fileId=5546d4624cb7f111014d2e8916795dea) and the homepage of the H-Bridge [here](https://www.infineon.com/cms/de/product/power/motor-control-ics/intelligent-motor-control-ics/integrated-full-bridge-driver/ifx9201sg/).
+A PDF summarizing the features and layout of the H-Bridge Kit 2GO board is stored on the Infineon homepage [here](https://www.infineon.com/dgdl/Infineon-H-Bridge_Kit_2Go_UM-UM-v01_03-EN.pdf?fileId=5546d46250cc1fdf015133ee879d3696).
+The datasheet of the H-Bridge IFX9201 can be found [here](https://www.infineon.com/dgdl/Infineon-IFX9201SG-DS-v01_01-EN.pdf?fileId=5546d4624cb7f111014d2e8916795dea) and the homepage of the H-Bridge IC [here](https://www.infineon.com/cms/de/product/power/motor-control-ics/intelligent-motor-control-ics/integrated-full-bridge-driver/ifx9201sg/).
 
 The datasheet for the XMC1100 can be found here [XMC1100 Datasheet](https://www.infineon.com/dgdl/Infineon-xmc1100-DS-v01_04-EN.pdf?fileId=5546d46255dd933d0155e31763e577dc) while the respective reference manual is located here [XMC1100 Reference Manual](https://www.infineon.com/dgdl/Infineon-xmc1100-AA_rm-UM-v01_01-EN.pdf?fileId=5546d46255dd933d0155e31753b077af).
 
