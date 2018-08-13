@@ -1,6 +1,7 @@
 * [Home](https://github.com/Infineon/XMC-for-Arduino/wiki)  
 * [Issues](https://github.com/Infineon/XMC-for-Arduino/wiki/Issues)
 * [Implementation in Arduino IDE](https://github.com/Infineon/XMC-for-Arduino/wiki/Implementation-in-Arduino-IDE)  
+* [Core Libraries](https://github.com/Infineon/XMC-for-Arduino/wiki/Core-Libraries)
 * Supported Boards
   * [XMC1100 XMC 2Go](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC-2Go)
   * [XMC1100 H-Bridge 2Go](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC1100-H%E2%80%90Bridge-2Go)
