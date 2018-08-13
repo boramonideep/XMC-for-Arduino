@@ -10,8 +10,8 @@ The library can compile on other boards than the original Sense2GoL board, if yo
 ## I2S Library
 
 This library has been tested for the [Adafruit MEMS microphone breakout](https://learn.adafruit.com/adafruit-i2s-mems-microphone-breakout) with both XMC4700 relax kit and XMC1100 XMC2Go.
-It will also support Infineon's XENSIV MEMS microphone. Please refer to documentation for pin connections.
+It also support´s Infineon's XENSIV MEMS microphone. Please refer to documentation for pin connections.
 
 ### Limitations
-As a preliminary version, it works well with the XMC4700 relax kit; with XMC2Go, however, if conditions need to be added in order to filter out the glitches in the raw data.
+With XMC2Go (possibly also with other XMC1000 family devices), you might see many glitches in the sampled data. This is due to the lower speed of the microcontrollers, and you should try to reduce the I2S sampling rate.
 
