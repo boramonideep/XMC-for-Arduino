@@ -8,4 +8,5 @@
   * [XMC1100 Boot Kit](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC1100-Boot-Kit)
   * [XMC1300 Boot Kit](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC1300-Boot-Kit)
   * [XMC1300 Sense2GoL](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC1300-Sense2GoL)
+  * [XMC1400 Boot Kit](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC1400-Boot-Kit)
   * [XMC4700 Relax Kit](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC4700-Relax-Kit)
