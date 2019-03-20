@@ -27,5 +27,5 @@ In case you want to change the design or reuse it for your own projects, please 
 
 # Board Information, Datasheet and Additional Information
 A PDF summarizing the features and layout of the XMC 2Go board is stored on the Infineon homepage [here](https://www.infineon.com/dgdl/Board_Users_Manual_XMC_2Go_Kit_with_XMC1100_R1.0.pdf?fileId=db3a3043444ee5dc014453d6c75078c6).
-The datasheet for the XMC1100 can be found here [XMC1100 Datasheet](https://www.infineon.com/dgdl/Board_Users_Manual_XMC1100_CPU_Card_R2.pdf?folderId=db3a304334fac4c601350a01037e11d2&fileId=db3a30433da119ff013da232476b1416&ack=t) while the respective reference manual is located here [XMC1100 Reference Manual](https://www.infineon.com/dgdl/Infineon-xmc1100-AA_rm-UM-v01_01-EN.pdf?fileId=5546d46255dd933d0155e31753b077af).
+The datasheet for the XMC1100 can be found here [XMC1100 Datasheet](https://www.infineon.com/dgdl/Infineon-xmc1100_AB-DS-v01_08-EN.pdf?fileId=5546d4624a0bf290014a4bdaff9325bd) while the respective reference manual is located here [XMC1100 Reference Manual](https://www.infineon.com/dgdl/Infineon-xmc1100-AA_rm-UM-v01_01-EN.pdf?fileId=5546d46255dd933d0155e31753b077af).
 
