@@ -18,7 +18,9 @@ If you are using the standalone XMCFlasher then you will be getting an error lik
 ##### XMCFlasher
 For standalone XMCFlasher modify the xmcFlasher.bat as follows
 
-> java -DxmcFlasher.JLink.dllPath="C:\Program Files (x86)\SEGGER\JLink_V650\JLinkARM.dll" -jar %~dp0\xmcflasher.jar %* --gui
+ `java -DxmcFlasher.JLink.dllPath="C:\Program Files (x86)\SEGGER\JLink_V650\JLinkARM.dll" -jar %~dp0\xmcflasher.jar %* --gui`
+
+
 
 The flasher will starts in GUI mode
 
