@@ -41,6 +41,6 @@ In case you want to change the design or reuse it for your own projects, please 
 [DEMO Radar BB XMC4700 PCB Design Data](https://www.infineon.com/cms/en/product/evaluation-boards/demo-sense2gol-pulse/#!tools)
 
 # Board Information, Datasheet and Additional Information
-A PDF summarizing the features and layout of the DEMO Radar BB XMC4700 board is stored on the Infineon homepage [here](https://www.infineon.com/dgdl/Infineon-S2GL_Application_Note_AN597-ApplicationNotes-v01_00-EN.pdf?fileId=5546d4626b2d8e69016b89403b9342aa).
+A PDF summarizing the features and layout of the DEMO Radar BB XMC4700 board is stored on the Infineon homepage [here](https://www.infineon.com/dgdl/Infineon-AN602%20Radar%20Baseboard%20XMC4700-ApplicationNotes-v01_00-EN.pdf?fileId=5546d4626e651a41016e82b63d8a1574).
 The datasheet for the XMC4700 can be found here [XMC4700 Datasheet](https://www.infineon.com/dgdl/Infineon-XMC4700-XMC4800-DS-v01_00-EN.pdf?fileId=5546d462518ffd850151908ea8db00b3) while the respective reference manual is located here [XMC4700 Reference Manual](https://www.infineon.com/dgdl/Infineon-ReferenceManual_XMC4700_XMC4800-UM-v01_03-EN.pdf?fileId=5546d462518ffd850151904eb90c0044).
 
