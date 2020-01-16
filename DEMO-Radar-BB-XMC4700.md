@@ -38,7 +38,7 @@ In case connection via the ISCP header is required to the target Arduino shield,
 # PCB Design Data
 In case you want to change the design or reuse it for your own projects, please find the Radar Baseboard XMC4700 board design for Altium Designer under the following link:
 
-[DEMO Radar BB XMC4700 PCB Design Data](https://www.infineon.com/dgdl/Infineon-PCB+Footprints+and+Symbols+-+XMC4700-XMC4800+-+Source+Eagle+-+Relax+Kit+Series-PCB-v01_00-EN.zip?fileId=5546d46250cc1fdf015139c2d2f32016)
+[DEMO Radar BB XMC4700 PCB Design Data](https://www.infineon.com/cms/en/product/evaluation-boards/demo-sense2gol-pulse/#!tools)
 
 # Board Information, Datasheet and Additional Information
 A PDF summarizing the features and layout of the DEMO Radar BB XMC4700 board is stored on the Infineon homepage [here](https://www.infineon.com/dgdl/Infineon-S2GL_Application_Note_AN597-ApplicationNotes-v01_00-EN.pdf?fileId=5546d4626b2d8e69016b89403b9342aa).
