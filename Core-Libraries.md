@@ -14,3 +14,6 @@ This library has been tested with the IM69D130 Microphone Shield2Go with both XM
 ### Limitations
 With XMC 2Go (possibly also with other XMC1000 family devices), you might easily overflow the I2S buffer and you should try to reduce the I2S sampling rate if so.
 
+## Pulsed Doppler Radar Library
+
+This library is developed and tested with the DEMO SENSE2GOL PULSE kit (comprising of the DEMO Radar BB XMC4700 and the Shield BGT24LTR11 boards). For more information to use this library, please refer to the [README.md](https://github.com/Infineon/XMC-for-Arduino/blob/master/arm/libraries/BGT24LTR11-Pulsed-Doppler-Radar/README.md) of the Pulsed Doppler Radar library.
