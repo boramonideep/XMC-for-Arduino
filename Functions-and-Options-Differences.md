@@ -3,17 +3,17 @@ This section covers the differences between standard Arduino and XMC-for-Arduino
 
 ## GPIO
 Extra pinMode types added that most engineers want
-
+~~~
     INPUT_PULLDOWN
     OUTPUT_OPENDRAIN
+~~~
 
 # Extra functions (than standard Arduino AVR)
-
 ## GPIO
 Does what the function names says but must have been configured as output
-
+~~~
     digitalToggle( pin )
-
+~~~
 # Arduino Function Differences
 
 ## Input Mode Pins
@@ -25,13 +25,13 @@ On XMC boards the inputs are UNDEFINED, you **MUST** specify every pin to be in 
 The method in Wire class for 'begin' is not the same as AVR Arduino, and has different modes for Master and Slave
 
 In AVR Arduino setting an I2C Master or Slave
-
+~~~
    Wire.begin(8); // join i2c bus (address optional for master)
-
+~~~
 XMC-for-Arduino setting for I2C Master **ONLY**
-
+~~~
     Wire.begin(); // join i2c bus (address blank for master)
-
+~~~
 Currently the address is NOT optional for XMC as this currently assumes this must be Slave mode configuration and sets the I2C configuration differently.
 
 ## Tone
