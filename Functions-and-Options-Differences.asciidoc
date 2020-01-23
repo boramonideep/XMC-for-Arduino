@@ -1,4 +1,5 @@
 [Home](https://github.com/Infineon/XMC-for-Arduino/wiki)
+
 ## Extra modes (if patches applied)
 This section covers the differences between standard Arduino and XMC-for-Arduino
 ### GPIO
