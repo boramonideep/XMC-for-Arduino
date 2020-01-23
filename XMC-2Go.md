@@ -2,6 +2,22 @@
 This pages summarizes information about the XMC 2Go evaluation board and its implementation for the Arduino IDE. The XMC 2Go board consists of a XMC1100 microcontroller with a debugger implemented by a XMC4200 microcontroller. The Infineon homepage of the board can be found [here](https://www.infineon.com/cms/de/product/evaluation-boards/KIT_XMC_2GO_XMC1100_V1/productType.html?productType=db3a304443537c4e01436ccecb5d154f#ispnTab9).
 
 # Changes
+## V1.4.0 Onwards
+The release V1.4.0 changed the Arduino pin out: Analog Inputs A0 and A1 have been swapped as part of adding extra 2 Analog Inputs - 
+* A0 is now pin 13
+* A1 is now pin 12
+
+Additions of extra Analog and PWM channels -
+
+| Function |Arduino<br>Pin |Shared with|
+|:---|:---:|---:|
+|A2|11|I2C: SDA|
+|A3|10|I2C: SCL|
+|PWM0|8|-- (existing)|
+|PWM1|0|SPI: MISO|
+|PWM2|2|SPI: SCK|
+|PWM3|3|SPI: SS|
+## V1.1.0 Onwards
 The release V1.1.0 changed the pin out: MISO and MOSI have been swapped to ensure compatibility with additional existing boards, please compare pin out diagram for changes.
 * MISO is now pin 0
 * MOSI is now pin 1
