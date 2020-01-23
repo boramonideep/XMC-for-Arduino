@@ -1,20 +1,25 @@
 # Extra modes (if patches applied)
 This section covers the differences between standard Arduino and XMC-for-Arduino
+
 ## GPIO
 Extra pinMode types added that most engineers want
     INPUT_PULLDOWN
     OUTPUT_OPENDRAIN
+
 # Extra functions (than standard Arduino AVR)
+
 ## GPIO
 Does what the function names says but must have been configured as output
 
     digitalToggle( pin )
 
 # Arduino Function Differences
+
 ## Input Mode Pins
 On standard Arduino boards, GPIO is by default either a function like Serial or in INPUT mode.
 
 On XMC boards the inputs are UNDEFINED, you **MUST** specify every pin to be in INPUT Mode that needs Inputs.
+
 ## Wire/I2C Differences
 The method in Wire class for 'begin' is not the same as AVR Arduino, and has different modes for Master and Slave
 
