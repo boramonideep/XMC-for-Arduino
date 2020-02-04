@@ -49,12 +49,12 @@ Functions return error codes or valid values so be sure which error code you are
  </tr>
  <tr>
   <td>getAnalogWriteBits</td>
-  <td>8 to 12</td>
+  <td>8 to 16</td>
   <td> none</td>
  </tr>
  <tr>
   <td>getanalogWriteMaximum</td>
-  <td>255 to 4095</td>
+  <td>255 to 65535</td>
   <td>none</td>
  </tr>
  <tr>
