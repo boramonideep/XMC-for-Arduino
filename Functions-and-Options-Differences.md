@@ -43,10 +43,16 @@ Tone has frequency range of
 	maximum = 500 Hz
 	minimum = 1 Hz
 
-This is due to the fact that the tone frequency is software derived from the Systick handler, Systick has a time period of 1 ms. At maximum each handler event for Systick toggles a GPIO pin, so at minimum period of 1 ms the output is toggled, so TWO events produce one aquare wave cycle, therefoe the maximum output frequency is 500Hz.
+This is due to the fact that the tone frequency is software derived from the Systick handler, Systick has a time period of 1 ms. At maximum each handler event for Systick toggles a GPIO pin, so at minimum period of 1 ms the output is toggled, so TWO events produce one square wave cycle, therefore the maximum output frequency is 500Hz.
 
 The minimum is due to the fact that tone function only accepts an unsigned integer (32 bit) for the frequency, so the minimum usable frequency is 1.
 
-Standard Arduinos use hardware timers (the few that are available) to generate tones and at least one timer can interfere with other functions.
+Standard Arduino boards use hardware timers (the few that are available) to generate tones and at least one timer can interfere with other functions.
 
 However this does mean you can have more tone pins, just much lower frequency range.
+## Functions **NOT** Implemented
+These are standard Arduino functions (often rarely used) which are not implemented
+
+| | | |
+|:---|:-:|:---|
+|map|-|Map one number range onto another range|
