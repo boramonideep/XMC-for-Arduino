@@ -1,8 +1,12 @@
 # Overview
 This pages summarizes information about the [XMC H-Bridge Kit 2GO](https://www.infineon.com/cms/de/product/evaluation-boards/h-bridge-kit-2go/) evaluation board and its implementation for the Arduino IDE. XMC H-Bridge Kit 2GO is fully populated with all electronic components equipped with the H-Bridge [IFX9201](https://www.infineon.com/cms/de/product/power/motor-control-ics/intelligent-motor-control-ics/integrated-full-bridge-driver/ifx9201sg/) combined with XMC 1100 Microcontroller  to realize your own DC motor control. It is designed for the control of DC motors or other inductive loads up to 6 A or up to 36 V of supply. The Infineon homepage of the board can be found [here](https://www.infineon.com/cms/de/product/evaluation-boards/h-bridge-kit-2go/).
+# Changes
+The release V1.4.0 changed the Arduino pin out, for XMC1100 XMC2Go, so later releases will have the Analog pins to match the XMC2Go. Pin out change is: Analog Inputs A0 and A1 have been swapped - 
+* A0 is now pin 13
+* A1 is now pin 12
 
 # Arduino Pin Out
-The pin layout of the XMC 2Go for the Arduino IDE is as follows (the original file can be found [here](https://github.com/Infineon/Assets/blob/master/Pictures/XMC%202Go_H-Bridge_PO.jpg)):
+The pin layout of the XMC H-Bridge 2Go for the Arduino IDE is as follows (the original file can be found [here](https://github.com/Infineon/Assets/blob/master/Pictures/XMC%202Go_H-Bridge_PO.jpg)):
 
 ![XMC H-Bridge 2Go Pin Out for Arduino](https://github.com/Infineon/Assets/blob/master/Pictures/XMC%202Go_H-Bridge_PO.jpg)
 
