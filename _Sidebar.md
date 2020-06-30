@@ -10,7 +10,7 @@
   * [XMC1300 Sense2GoL](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC1300-Sense2GoL)
   * [XMC1400 Boot Kit](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC1400-Boot-Kit)
   * [XMC4700 Relax Kit](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC4700-Relax-Kit)
-  * [XMC4400 Platform2Go] (https://github.com/Infineon/XMC-for-Arduino/wiki/XMC4400-Platform2Go)
+  * [XMC4400 Platform2Go](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC4400-Platform2Go)
   * [DEMO Radar BB XMC4700](https://github.com/Infineon/XMC-for-Arduino/wiki/DEMO-Radar-BB-XMC4700)
 * Arduino Variations
     * [Functions and Options Differences](https://github.com/Infineon/XMC-for-Arduino/wiki/Functions-and-Options-Differences "Known differences between Arduino for AVR and XMC-for-Arduino")
