@@ -15,3 +15,4 @@
 * Arduino Variations
     * [Functions and Options Differences](https://github.com/Infineon/XMC-for-Arduino/wiki/Functions-and-Options-Differences "Known differences between Arduino for AVR and XMC-for-Arduino")
     * [Analog Functions and improvements](https://github.com/Infineon/XMC-for-Arduino/wiki/Analog-Functions-and-Additions "Extra analog functonality over Arduino for AVR and XMC-for-Arduino")
+* [Contributing and Third Party Libraries](https://github.com/techpaul/XMC-for-Arduino/wiki/Contrubuting-and-Third-Party-Libraries)
