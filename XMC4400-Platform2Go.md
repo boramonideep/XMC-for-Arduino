@@ -17,6 +17,10 @@ Details of the connection can also be found in the schematics in the user manual
 
 A workaround is to set the I2C pins to tri-state via `pinMode(<pinNumber>, XMC_GPIO_MODE_INPUT_TRISTATE);` if you want to use the analog pins (but then I2C cannot be used anymore). This function is using the pin mode definitions from the XMC Peripheral Library defined [here](https://github.com/Infineon/XMC-for-Arduino/blob/0dcbd5822cb59d12a7bdae776d307fae9c607ed7/cores/xmc_lib/XMCLib/inc/xmc4_gpio.h#L206).
 
+You can also cut the connection to the pins physically by cutting the marked blue routes on the back side of the PCB:
+
+![XMC4400 Cut Lines Board](https://user-images.githubusercontent.com/26908977/96910232-7332d980-149f-11eb-81ec-2b5c23b01372.png)
+
 # Key Features
 * XMC™4400 (ARM® Cortex™-M4)
 * ARDUINO Uno compatibility
