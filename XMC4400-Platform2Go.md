@@ -9,6 +9,14 @@ The pin layout of the XMC4400 Platform 2Go evaluation board (for 5V Shields) for
 
 ![XMC4400 Platform 2Go evaluation board (for 5V Shields) Pin Out for Arduino](https://github.com/Infineon/Assets/blob/master/Pictures/xmc4400_platform2go.jpg)
 
+## Important Note
+
+Please note that **Arduino pin number 16 & 22 (SCL & A5)** and **Arduino pin number 15 & 21 (SDA & A4)** are **connected** with each other on the board itself. 
+Although they are different physical pins of the microcontroller, they are connected with each other on the board to comply with the original Arduino UNO Rev3 pin connections. This influences analog measurements on A4 and A5 if you are using I2C simultaneously.
+Details of the connection can also be found in the schematics in the user manual of the board [here](https://www.infineon.com/dgdl/Infineon-Board_User_Manual_XMC4700_XMC4800_Relax_Kit_Series-UM-v01_02-EN.pdf?fileId=5546d46250cc1fdf01513f8e052d07fc).
+
+A workaround is to set the I2C pins to tri-state via `pinMode(<pinNumber>, XMC_GPIO_MODE_INPUT_TRISTATE);` if you want to use the analog pins (but then I2C cannot be used anymore). This function is using the pin mode definitions from the XMC Peripheral Library defined [here](https://github.com/Infineon/XMC-for-Arduino/blob/0dcbd5822cb59d12a7bdae776d307fae9c607ed7/cores/xmc_lib/XMCLib/inc/xmc4_gpio.h#L206).
+
 # Key Features
 * XMC™4400 (ARM® Cortex™-M4)
 * ARDUINO Uno compatibility
