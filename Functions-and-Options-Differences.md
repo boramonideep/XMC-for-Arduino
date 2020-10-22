@@ -50,9 +50,3 @@ The minimum is due to the fact that tone function only accepts an unsigned integ
 Standard Arduino boards use hardware timers (the few that are available) to generate tones and at least one timer can interfere with other functions.
 
 However this does mean you can have more tone pins, just much lower frequency range.
-## Functions **NOT** Implemented
-These are standard Arduino functions (often rarely used) which are not implemented
-
-| | | |
-|:---|:-:|:---|
-|map|-|Map one number range onto another range|
