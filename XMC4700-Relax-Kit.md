@@ -15,11 +15,11 @@ Please note that **Arduino pin number 16 & 17 (SCL & A5)** and **Arduino pin num
 Although they are different physical pins of the microcontroller, they are connected with each other on the board to comply with the original Arduino UNO Rev3 pin connections. This influences analog measurements on A4 and A5 if you are using I2C simultaneously.
 Details of the connection can also be found in the schematics in the user manual of the board [here](https://www.infineon.com/dgdl/Infineon-XMC4400_Platform2Go-UserManual-v01_00-EN.pdf?fileId=5546d4626f229553016f8fc159482c94).
 
-A workaround is to set the I2C pins to tri-state via `pinMode(<pinNumber>, XMC_GPIO_MODE_INPUT_TRISTATE);` if you want to use the analog pins (but then I2C cannot be used anymore). This function is using the pin mode definitions from the XMC Peripheral Library defined [here](https://github.com/Infineon/XMC-for-Arduino/blob/0dcbd5822cb59d12a7bdae776d307fae9c607ed7/cores/xmc_lib/XMCLib/inc/xmc4_gpio.h#L206).
+A workaround is to set the I2C pins to output open drain via `pinMode(<pinNumber>, XMC_GPIO_MODE_OUTPUT_OPEN_DRAIN);` and writing a HIGH afterwards via `digitalWrite(<pinNumber>, HIGH);` to turn it off if you want to use the analog pins (but then I2C cannot be used anymore). Tri-state via `pinMode(<pinNumber>, XMC_GPIO_MODE_INPUT_TRISTATE);` is also possible, but the open drain method is preferable as explained [here](https://github.com/Infineon/XMC-for-Arduino/issues/164#issuecomment-714804397) for some use cases. These functions are using the pin mode definitions from the XMC Peripheral Library defined [here](https://github.com/Infineon/XMC-for-Arduino/blob/0dcbd5822cb59d12a7bdae776d307fae9c607ed7/cores/xmc_lib/XMCLib/inc/xmc4_gpio.h#L206).
 
 You can also cut the physical connection on the board itself (blue routes on the back side of the PCB) as indicated here:
 
-![XMC4400 cut copper analog](https://user-images.githubusercontent.com/26908977/96910232-7332d980-149f-11eb-81ec-2b5c23b01372.png)
+![XMC4700 Cut Copper Analog](https://user-images.githubusercontent.com/20902096/96850978-c2edb280-1457-11eb-9636-b4e8c7b0f725.JPG)
 
 # Key Features
 * XMC4700-F144 Microcontroller based on ARM® Cortex®-M4 @ 144MHz, 2MB Flash and 352KB RAM
