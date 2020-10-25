@@ -7,7 +7,7 @@ Equipped with an ARM® Cortex®-M4 based XMC™ Microcontroller from Infineon Te
 # Arduino Pin Out
 The pin layout of the XMC4400 Platform 2Go evaluation board (for 5V Shields) for the Arduino IDE is as follows (the original file can be found [here](https://github.com/Infineon/Assets/blob/master/Pictures/xmc4400_platform2go.jpg)):
 
-![XMC4400 Platform 2Go evaluation board (for 5V Shields) Pin Out for Arduino](https://github.com/Infineon/Assets/blob/master/Pictures/xmc4400_platform2go.jpg)
+![XMC4400 Platform 2Go evaluation board (for 5V Shields) Pin Out for Arduino](https://github.com/Infineon/Assets/blob/master/Pictures/xmc4400_platform2go_PO.jpg)
 
 ## Important Note
 
