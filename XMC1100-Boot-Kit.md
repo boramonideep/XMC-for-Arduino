@@ -6,7 +6,7 @@ The pin layout of the XMC1100 Boot Kit for the Arduino IDE is as follows (the or
 
 ## Important Note
 
-Please note that **Arduino pin number 16 & 22 (SCL & A5)** and **Arduino pin number 15 & 21 (SDA & A4)** are not connected with each other nor share the same pins/resources.
+Please note that **Arduino pin number 16 & 22 (SCL & A5)** and **Arduino pin number 15 & 21 (SDA & A4)** are **not** connected with each other **nor** share the same pins/resources.
 This is different from the original Arduino UNO Rev3 implementation.
 
 ## Pin Out
