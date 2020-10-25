@@ -11,7 +11,7 @@ The pin layout of the XMC4700 Relax Kit (for 5V Shields) for the Arduino IDE is 
 
 ## Important Note
 
-Please note that **Arduino pin number 16 & 17 (SCL & A5)** and **Arduino pin number 15 & 18 (SDA & A4)** are **connected** with each other on the board itself. 
+Please note that **Arduino pin number 16 & 22 (SCL & A5)** and **Arduino pin number 15 & 21 (SDA & A4)** are **connected** with each other on the board itself. 
 Although they are different physical pins of the microcontroller, they are connected with each other on the board to comply with the original Arduino UNO Rev3 pin connections. This influences analog measurements on A4 and A5 if you are using I2C simultaneously.
 Details of the connection can also be found in the schematics in the user manual of the board [here](https://www.infineon.com/dgdl/Infineon-XMC4400_Platform2Go-UserManual-v01_00-EN.pdf?fileId=5546d4626f229553016f8fc159482c94).
 
