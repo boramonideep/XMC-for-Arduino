@@ -5,11 +5,11 @@ analogWrite etc. have changed after V1.2.1 to have extra safety measures to ensu
 Additionally extra getter functions have been added so other libraries can access the resolution of read and write functions as number of bits and current maximum value possible.
 
 ## Extra functions
-These functions return the analog resolution as number of bits
+These functions return the analogue resolution as number of bits
 * uint8_t getAnalogReadBits( ) - range 8 to 12
 * uint8_t getAnalogWriteBits( ) - range 8 to 16
 
-These functions return the analog resolution as its maximum value
+These functions return the analogue resolution as its maximum value
 * uint16_t getAnalogReadMaximum( ) - range 255 to 4095
 * uint16_t getAnalogWriteMaximum( ) - range 255 to 65535
 
@@ -74,7 +74,26 @@ Functions return error codes or valid values so be sure which error code you are
   <td>-1 = invalid frequency<br>
       -2 = wrong pin</td>
  </tr>
+ <tr>
+  <td>analogReference</td>
+  <td>none</td>
+  <td>NULL function see below</td>
+ </tr>
 </table>
 This should enable checks in software for valid operation and debugging problem code.
+
+## AREF Analogue Reference
+On all boards the Analogue Reference is set to use the internal power supply (however noisy), so the AREF pin is an **OUTPUT** of the AREF in use
+do **NOT** connected any external voltage source to this pin, or use shields that change this voltage.
+
+**CAUTION** any shorts on this pin especially to 0V (GND) will bring down the supply of the chip.
+
+The pin voltage is the current supply voltage to AREF for analogue conversions.
+
+### analogReference( )
+This function has NO operation and will not match any call on parameters passed in with other libraries or examples that use this call.
+
+Any shields and examples that try to change this, will **NOT** function the same on these boards.
+
 
 [Home](https://github.com/Infineon/XMC-for-Arduino/wiki)
