@@ -83,8 +83,7 @@ Functions return error codes or valid values so be sure which error code you are
 This should enable checks in software for valid operation and debugging problem code.
 
 ## AREF Analogue Reference
-On all boards the Analogue Reference is set to use the internal power supply (however noisy), so the AREF pin is an **OUTPUT** of the AREF in use
-do **NOT** connected any external voltage source to this pin, or use shields that change this voltage.
+On all boards the Analogue Reference is set to use the internal power supply (however noisy), so the AREF pin is an **OUTPUT** of the AREF in use. Do **NOT** connect any external voltage source to this pin, or use shields that change this voltage.
 
 **CAUTION** any shorts on this pin especially to 0V (GND) will bring down the supply of the chip.
 
