@@ -1,6 +1,6 @@
 Arduino Uno R3 format dictates that A4 and A5 are also used for I2C operations, so when I2C is enabled analogue inputs A4 and A5 are **NOT** available.
 
-On Arduino Uno R3 this is an alternate pin function, depending on which XMC-for-Arduino boards this could be an alternate pin function, or other case as described below
+On Arduino Uno R3 this is an alternate pin function, depending on which XMC-for-Arduino boards this could be an alternate pin function, or other case as described below.
 <table>
  <tr>
   <td><b>Board</b></td>
@@ -26,12 +26,16 @@ On Arduino Uno R3 this is an alternate pin function, depending on which XMC-for-
   <td>XMC4400 Platform 2Go</td>
   <td><b>External</b> hard wired pins</td>
   <td>For 3V3 boards set I2C pins to tristate or open drain to use<br>
-      For 5V boards see Wiki board page on track cuts to enable A4 and A5 to work</td>
+      For 5V boards see Wiki board page on track cuts to enable A4 and A5 to work<br>
+      Level shifter on the 5V board could interfere with tristate/open drain setting
+ </td>
  </tr>
   <tr>
   <td>XMC4700 Relax Kit<br>(and variants)</td>
   <td><b>External</b> hard wired pins</td>
   <td>For 3V3 boards set I2C pins to tristate or open drain to use<br>
-      For 5V boards see Wiki board page on track cuts to enable A4 and A5 to work</td>
+      For 5V boards see Wiki board page on track cuts to enable A4 and A5 to work<br>
+      Level shifter on the 5V board could interfere with tristate/open drain setting
+ </td>
  </tr>
 </table>
