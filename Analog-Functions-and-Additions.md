@@ -89,6 +89,8 @@ On all boards the Analogue Reference is set to use the internal power supply (ho
 
 The pin voltage is the current supply voltage to AREF for analogue conversions.
 
+This pin **CANNOT** be reassigned as GPIO (pinMode has no effect).
+
 ### analogReference( )
 This function has NO operation and will not match any call on parameters passed in with other libraries or examples that use this call.
 
