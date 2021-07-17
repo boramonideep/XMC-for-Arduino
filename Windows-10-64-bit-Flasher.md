@@ -1,4 +1,6 @@
-XMC flasher wont work properly on Windows 10 64 bit, with below configuration
+On 64 bit Windows 10 it has been reported that the XMCFlasher does not always work out of the box. Also can fail on 32 bit systems that some other software creates a Program Files (x86) folder, use the same fix.
+
+See Issue [=104 on Infineon/XMC-for-Arduino](https://github.com/Infineon/XMC-for-Arduino/issues/104#issuecomment-530547204)
 
 # Configuration
 * Windows 10, 64bit
