@@ -19,6 +19,8 @@ The [User Manual](https://www.infineon.com/dgdl/Infineon-Board_User_Manual_XMC47
 - Page 11 details the 3V3 signals on connectors X1 and X2 (figure 7) including ADC channels
 - Page 12 below Figure 8 details analog input specifications
 
+See also another Wiki for notes on [XMC4xxx Series Analog pins](https://github.com/techpaul/XMC-for-Arduino/wiki/XMC4xxx-Series-Analog-pins "XMC4xxx series analogue pin WARNINGS")
+
 A workaround is to set the I2C pins to output open drain via `pinMode(<pinNumber>, OUTPUT_OPENDRAIN);` and writing a HIGH afterwards via `digitalWrite(<pinNumber>, HIGH);` to turn it off if you want to use the analog pins (but then I2C cannot be used anymore). Tri-state via `pinMode(<pinNumber>, XMC_GPIO_MODE_INPUT_TRISTATE);` is also possible, but the open drain method is preferable as explained [here](https://github.com/Infineon/XMC-for-Arduino/issues/164#issuecomment-714804397) for some use cases. These functions are using the pin mode definitions from the XMC Peripheral Library defined [here](https://github.com/Infineon/XMC-for-Arduino/blob/0dcbd5822cb59d12a7bdae776d307fae9c607ed7/cores/xmc_lib/XMCLib/inc/xmc4_gpio.h#L206).
 
 You can also cut the physical connection on the board itself (blue routes on the back side of the PCB) as indicated here:
