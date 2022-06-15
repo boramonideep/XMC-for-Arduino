@@ -106,7 +106,7 @@ jobs:
             stackMem: true
             multiSerial: false
             dma: false
-            alarmRtc: true
+            alarmRtc: false
 
         # Make board type-specific customizations to the matrix jobs
         include:
