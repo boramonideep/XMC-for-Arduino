@@ -101,11 +101,11 @@ jobs:
             i2s: true
             dieTemp: true
             heapMem: true
-            sleep1100: false
-            sleep4700 : true
+            sleep1100: true
+            sleep4700 : false
             stackMem: true
-            multiSerial: true
-            dma: true
+            multiSerial: false
+            dma: false
             alarmRtc: true
 
         # Make board type-specific customizations to the matrix jobs
