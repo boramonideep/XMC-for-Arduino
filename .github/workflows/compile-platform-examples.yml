@@ -98,7 +98,7 @@ jobs:
             dma: true
             alarmRtc: true
           - fqbn: Infineon:arm:XMC1400_Arduino_Kit
-            i2s: true
+            i2s: false
             dieTemp: true
             heapMem: true
             sleep1100: true
