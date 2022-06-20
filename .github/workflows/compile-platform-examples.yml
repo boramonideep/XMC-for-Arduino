@@ -103,7 +103,7 @@ jobs:
             heapMem: true
             sleep1100: true
             sleep4700 : false
-            stackMem: true
+            stackMem: false
             multiSerial: false
             dma: false
             alarmRtc: false
