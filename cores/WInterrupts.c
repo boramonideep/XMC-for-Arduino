@@ -65,6 +65,14 @@ void CCU40_1_IRQHandler(void)
         interrupt_1_cb();
     }
 }
+
+void CCU41_0_IRQHandler(void)
+{
+    if (interrupt_0_cb)
+    {
+        interrupt_0_cb();
+    }
+}
 #endif
 
 void attachInterrupt(uint32_t interrupt_num, interrupt_cb_t callback, uint32_t mode)
@@ -146,21 +154,22 @@ void attachInterrupt(uint32_t interrupt_num, interrupt_cb_t callback, uint32_t m
             XMC_USIC_CH_SetInputSource(XMC_USIC0_CH0, XMC_USIC_CH_INPUT_DX5, USIC0_C0_DX5_P1_4);
             XMC_USIC_CH_SetInputSource(XMC_USIC0_CH0, XMC_USIC_CH_INPUT_DX2, USIC0_C0_DX2_DX5INS);
 #endif
-#if defined(XMC1400_Arduino_Kit)
-            /* P1_4 external interrupt goes through USIC to CCU4 */
-            XMC_USIC_CH_Enable(XMC_USIC0_CH0);
-            XMC_USIC_CH_SetInputSource(XMC_USIC0_CH0, XMC_USIC_CH_INPUT_DX5, USIC0_C0_DX5_P1_4);
-            XMC_USIC_CH_SetInputSource(XMC_USIC0_CH0, XMC_USIC_CH_INPUT_DX2, USIC0_C0_DX2_DX5INS);
-#endif
             XMC_CCU4_SLICE_EnableMultipleEvents(pin_irq.slice, XMC_CCU4_SLICE_MULTI_IRQ_ID_EVENT0);
             XMC_CCU4_SLICE_SetInterruptNode(pin_irq.slice, XMC_CCU4_SLICE_IRQ_ID_EVENT0, 0);
+#if defined(XMC1400_Arduino_Kit)            
+            NVIC_SetPriority(CCU41_0_IRQn, 3);
+#else
             NVIC_SetPriority(CCU40_0_IRQn, 3);
-
+#endif
             event_config.mapped_input = pin_irq.input;
             XMC_CCU4_SLICE_ConfigureEvent(pin_irq.slice, XMC_CCU4_SLICE_EVENT_0, &event_config);
 
             interrupt_0_cb = callback;
+#if defined(XMC1400_Arduino_Kit)                 
+            NVIC_EnableIRQ(CCU41_0_IRQn);
+#else
             NVIC_EnableIRQ(CCU40_0_IRQn);
+#endif
         }
         else if (pin_irq.irq_num == 1)
         {
@@ -207,7 +216,11 @@ void detachInterrupt(uint32_t interrupt_num)
 		switch (interrupt_num)
 		{
 			case 0:
+#if defined(XMC1400_Arduino_Kit)            
+                NVIC_DisableIRQ(CCU41_0_IRQn);
+#else
                 NVIC_DisableIRQ(CCU40_0_IRQn);
+#endif
                 break;
 
             case 1:
