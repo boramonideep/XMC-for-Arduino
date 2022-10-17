@@ -3,15 +3,15 @@ This pages summarizes information about the XMC4700 Relax Kit evaluation board a
 Please note that there exist versions with 5 V and 3.3V. Please be careful which version you have and use with your respective shields. The one described here means the 5 V version as this one is compatible with Arduino shields designed for the 5 V systems.
 
 # Arduino Pin Out
-The pin layout of the XMC4700 Relax Kit (for 5V Shields) for the Arduino IDE is as follows (the original file can be found [here](https://github.com/Infineon/Assets/blob/master/Pictures/XMC%204700_RelaxKit_5VShields_PO.jpg)):
+The pin layout of the XMC4700 Relax Kit (for 5V Shields) for the Arduino IDE is as follows (the original file can be found [here](https://github.com/Infineon/Assets/blob/version-2.x/Pictures/XMC%204700_RelaxKit_5VShields_PO_v2.png)):
 
 ## Pin Out
 
-![XMC4700 Relax Kit (for 5V Shields) Pin Out for Arduino](https://github.com/Infineon/Assets/blob/master/Pictures/XMC%204700_RelaxKit_5VShields_PO.jpg)
+![XMC4700 Relax Kit (for 5V Shields) Pin Out for Arduino](https://github.com/Infineon/Assets/blob/version-2.x/Pictures/XMC%204700_RelaxKit_5VShields_PO_v2.png)
 
 ## Important Note
 
-Please note that **Arduino pin number 16 & 22 (SCL & A5)** and **Arduino pin number 15 & 21 (SDA & A4)** are **connected** with each other on the board itself. 
+Please note that **Arduino pin number 15 & 21 (SCL & A5)** and **Arduino pin number 14 & 20 (SDA & A4)** are **connected** with each other on the board itself. 
 Although they are different physical pins of the microcontroller, they are connected with each other on the board to comply with the original Arduino UNO Rev3 pin connections. This influences analog measurements on A4 and A5 if you are using I2C simultaneously.
 Details of the connection can also be found in the schematics in the user manual of the board [here](https://www.infineon.com/dgdl/Infineon-Board_User_Manual_XMC4700_XMC4800_Relax_Kit_Series-UM-v01_02-EN.pdf?fileId=5546d46250cc1fdf01513f8e052d07fc).
 

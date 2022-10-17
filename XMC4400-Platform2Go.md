@@ -5,18 +5,18 @@ This kit has the XMC4400 device with debugger plus ETHERNET, CAN, ARDUINO, Mikro
 Equipped with an ARM® Cortex®-M4 based XMC™ Microcontroller from Infineon Technologies AG, the XMC4400 Platform2Go is designed to evaluate the capabilities of Infineon’s XMC4400  Microcontroller. It can be used with a wide range of development tools including Infineon’s free of charge Eclipse based IDE DAVE. 
 
 # Arduino Pin Out
-The pin layout of the XMC4400 Platform 2Go evaluation board (for 5V Shields) for the Arduino IDE is as follows (the original file can be found [here](https://github.com/Infineon/Assets/blob/master/Pictures/xmc4400_platform2go.jpg)):
+The pin layout of the XMC4400 Platform 2Go evaluation board (for 5V Shields) for the Arduino IDE is as follows (the original file can be found [here](https://github.com/Infineon/Assets/blob/version-2.x/Pictures/xmc4400_platform2go_PO_v2.png)):
 
-![XMC4400 Platform 2Go evaluation board (for 5V Shields) Pin Out for Arduino](https://github.com/Infineon/Assets/blob/master/Pictures/xmc4400_platform2go_PO.jpg)
+![XMC4400 Platform 2Go evaluation board (for 5V Shields) Pin Out for Arduino](https://github.com/Infineon/Assets/blob/version-2.x/Pictures/xmc4400_platform2go_PO_v2.png)
 
 ## Important Note
 
-Please note that **Arduino pin number 16 & 22 (SCL & A5)** and **Arduino pin number 15 & 21 (SDA & A4)** are **connected** with each other on the board itself. 
+Please note that **Arduino pin number 15 & 21 (SCL & A5)** and **Arduino pin number 14 & 20 (SDA & A4)** are **connected** with each other on the board itself. 
 Although they are different physical pins of the microcontroller, they are connected with each other on the board to comply with the original Arduino UNO Rev3 pin connections. This influences analog measurements on A4 and A5 if you are using I2C simultaneously.
 Details of the connection can also be found in the schematics in the user manual of the board [here](https://www.infineon.com/dgdl/Infineon-XMC4400_Platform2Go-UserManual-v01_00-EN.pdf?fileId=5546d4626f229553016f8fc159482c94).
 
 The [XMC4400 Platform2Go User Manual](https://www.infineon.com/dgdl/Infineon-XMC4400_Platform2Go-UserManual-v01_00-EN.pdf?fileId=5546d4626f229553016f8fc159482c94) on 
-- Page 12 details the 3V3 signals on connectors X1 and X2 (figure 7) including ADC channels
+- Page 12 details the 3V3 signals on connectors X1 and X2 (Figure 7) including ADC channels
 - Page 15 below Figure 9 details analog input specifications
 
 See also another Wiki for notes on [XMC4xxx Series Analog pins](https://github.com/techpaul/XMC-for-Arduino/wiki/XMC4xxx-Series-Analog-pins "XMC4xxx series analogue pin WARNINGS")
@@ -41,6 +41,11 @@ You can also cut the connection to the pins physically by cutting the marked blu
 * Easy to design products
 * Highest efficiency
 * Reduced system cost
+
+# PCB Design Data
+In case you want to change the design or reuse it for your own projects, please find the XMC4400 Platform2Go board design for Altium under the following link:
+
+[XMC4400 Platform2Go PCB Design Data](https://www.infineon.com/dgdl/Infineon-XMC4400_Platform2Go-PCBDesignData-v01_00-EN.zip?fileId=5546d46277921c32017795dcd31b4689)
 
 # Board Information, Datasheet and Additional Information
 A PDF summarizing the features and layout of the XMC4400 Platform 2Go evaluation board is stored on the Infineon homepage [here](https://www.infineon.com/dgdl/Infineon-XMC4400_Platform2Go-UserManual-v01_00-EN.pdf?fileId=5546d4626f229553016f8fc159482c94).

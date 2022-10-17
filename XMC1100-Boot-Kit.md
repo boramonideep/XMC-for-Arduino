@@ -2,7 +2,7 @@
 This pages summarizes information about the XMC1100 Boot Kit evaluation board and its implementation for the Arduino IDE. The XMC1100 Boot Kit board consists of a XMC1100 microcontroller with a debugger implemented by a XMC4200 microcontroller. The Infineon homepage of the board can be found [here](https://www.infineon.com/cms/en/product/evaluation-boards/KIT_XMC11_BOOT_001/productType.html?productType=db3a30443b360d0e013b8f5163c46f62#ispnTab1).
 
 # Arduino Pin Out
-The pin layout of the XMC1100 Boot Kit for the Arduino IDE is as follows (the original file can be found [here](https://github.com/Infineon/Assets/blob/master/Pictures/XMC%201100_BootKit_PO.jpg)).
+The pin layout of the XMC1100 Boot Kit for the Arduino IDE is as follows (the original file can be found [here](https://github.com/Infineon/Assets/blob/version-2.x/Pictures/XMC%201100_BootKit_PO_v2.png)).
 
 ## Important Note
 
@@ -11,7 +11,7 @@ This is different from the original Arduino UNO Rev3 implementation.
 
 ## Pin Out
 
-![XMC1100 Boot Kit Pin Out for Arduino](https://github.com/Infineon/Assets/blob/master/Pictures/XMC%201100_BootKit_PO.jpg)
+![XMC1100 Boot Kit Pin Out for Arduino](https://github.com/Infineon/Assets/blob/version-2.x/Pictures/XMC%201100_BootKit_PO_v2.png)
 
 # Key Features
 * XMC1100 Microcontroller (ARM® Cortex™-M0 based) in TSSOP-38 with 64 KB Flash and full peripheral set of XMC1100 series

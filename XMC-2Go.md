@@ -23,9 +23,9 @@ The release V1.1.0 changed the pin out: MISO and MOSI have been swapped to ensur
 * MOSI is now pin 1
 
 # Arduino Pin Out
-The pin layout of the XMC 2Go for the Arduino IDE is as follows (the original file can be found [here](https://github.com/Infineon/Assets/blob/master/Pictures/XMC%202Go_PO.jpg)):
+The pin layout of the XMC 2Go for the Arduino IDE is as follows (the original file can be found [here](https://github.com/Infineon/Assets/blob/version-2.x/Pictures/XMC%202Go_PO_v2.png)):
 
-![XMC 2Go Pin Out for Arduino](https://github.com/Infineon/Assets/blob/master/Pictures/XMC%202Go_PO.jpg)
+![XMC 2Go Pin Out for Arduino](https://github.com/Infineon/Assets/blob/version-2.x/Pictures/XMC%202Go_PO_v2.png)
 
 # Key Features
 * XMC1100 (ARM® Cortex™-M0 based)
