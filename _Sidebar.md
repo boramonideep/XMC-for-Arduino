@@ -4,7 +4,7 @@
   * [Linux 64 bit Flasher to board](https://github.com/Infineon/XMC-for-Arduino/wiki/Linux-64-bit-Flasher-to-board "Getting Segger and XMC-Flasher to work on 64 bit Linux")
   * [Windows 10 64 bit Flasher](https://github.com/Infineon/XMC-for-Arduino/wiki/Windows-10-64-bit-Flasher "Getting Segger and XMC-Flasher to work on 64 bit Windows 10")
 
-* [Core Libraries](https://github.com/Infineon/XMC-for-Arduino/wiki/Core-Libraries)
+* [Built-in Libraries](https://github.com/Infineon/XMC-for-Arduino/wiki/Built-in-Libraries)
 * Supported Boards
   * [XMC1100 XMC 2Go](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC-2Go)
   * [XMC1100 H-Bridge 2Go](https://github.com/Infineon/XMC-for-Arduino/wiki/XMC1100-H%E2%80%90Bridge-2Go)
