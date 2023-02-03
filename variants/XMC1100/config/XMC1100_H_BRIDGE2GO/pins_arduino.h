@@ -60,7 +60,7 @@ extern const uint8_t NUM_ANALOG_INPUTS;
 // Defines will be either set by ArduinoIDE in the menu or manually
 #ifdef SERIAL_HOSTPC
   // Comment out following line to use Serial on pins (board)
-  #define SERIAL_DEBUG    1
+  #define SERIAL_DEBUG      1
 #elif SERIAL_ONBOARD
   // No SERIAL_DEBUG will be defined, kept here for clarity
 #else
@@ -148,7 +148,7 @@ const uint8_t mapping_pin_PWM4[][ 2 ] = {
 /* Configurations of PWM channels for CCU4 type */
 XMC_PWM4_t mapping_pwm4[] =
     {
-    {CCU40, CCU40_CC40, 0, mapping_port_pin[8],  P0_0_AF_CCU40_OUT0,  XMC_CCU4_SLICE_PRESCALER_64, PWM4_TIMER_PERIOD, DISABLED}, // PWM disabled  8    P0.5
+    {CCU40, CCU40_CC40, 0, mapping_port_pin[8],  P0_5_AF_CCU40_OUT0,  XMC_CCU4_SLICE_PRESCALER_64, PWM4_TIMER_PERIOD, DISABLED}, // PWM disabled  8    P0.5
     {CCU40, CCU40_CC42, 2, mapping_port_pin[11], P2_10_AF_CCU40_OUT2, XMC_CCU4_SLICE_PRESCALER_64, PWM4_TIMER_PERIOD, DISABLED}  // PWM disabled  10   P2.11
     };
 const uint8_t NUM_PWM  = ( sizeof( mapping_pwm4 ) / sizeof( XMC_PWM4_t ) );
