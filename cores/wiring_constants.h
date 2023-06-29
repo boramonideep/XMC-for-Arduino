@@ -55,6 +55,8 @@ extern "C" {
         MSBFIRST = 1
     };
 
+#define SPI_MSBFIRST 0x00
+#define SPI_LSBFIRST 0x01
 
 #define DEFAULT 0
 #define EXTERNAL 1

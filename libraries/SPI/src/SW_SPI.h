@@ -84,7 +84,7 @@ static inline uint8_t SW_SPI_transfer_clock_div_2(uint8_t mosi, uint8_t miso, ui
     
     // Time critical
     noInterrupts();
-    if(dir == LSBFIRST)
+    if(dir == SPI_LSBFIRST)
     {
         if(delay)
         {
@@ -147,7 +147,7 @@ static inline uint8_t SW_SPI_transfer_clock_div_4(uint8_t mosi, uint8_t miso, ui
     
     // Time critical
     noInterrupts();
-    if(dir == LSBFIRST)
+    if(dir == SPI_LSBFIRST)
     {
         if(delay)
         {
@@ -210,7 +210,7 @@ static inline uint8_t SW_SPI_transfer_clock_div_8(uint8_t mosi, uint8_t miso, ui
     
     // Time critical
     noInterrupts();
-    if(dir == LSBFIRST)
+    if(dir == SPI_LSBFIRST)
     {
         if(delay)
         {

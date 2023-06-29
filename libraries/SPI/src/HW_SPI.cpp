@@ -160,7 +160,7 @@ void SPIClass::endTransaction(void)
 
 void SPIClass::setBitOrder(uint8_t order)
 {
-    if (order == LSBFIRST)
+    if (order == SPI_LSBFIRST)
     {
         XMC_SPI_CH_SetBitOrderLsbFirst(XMC_SPI_config->channel);
     }

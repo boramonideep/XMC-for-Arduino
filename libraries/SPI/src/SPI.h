@@ -45,8 +45,8 @@
 
 #define SPI_IMODE_NONE 0x00
 
-#define MSBFIRST 0x00
-#define LSBFIRST 0x01
+// #define SPI_MSBFIRST 0x00
+// #define SPI_LSBFIRST 0x01
 
 #define ARDUINO_SPI_CLOCK 16000000U
 
@@ -90,7 +90,7 @@ public:
     SPISettings()
     {
         clockFreq   = 4000000;
-        bitOrder    = MSBFIRST;
+        bitOrder    = SPI_MSBFIRST;
         dataMode    = SPI_MODE0;
     }
 
