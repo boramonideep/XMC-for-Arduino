@@ -30,8 +30,8 @@ jobs:
         python release.py build-release ${{ github.ref_name }}
 
     - name: Upload assets
-      permissions:
-        contents: write
+#      permissions:
+#        contents: write
       uses: softprops/action-gh-release@v1
       with:
         name: XMC-for-Arduino ${{  github.ref_name  }}
