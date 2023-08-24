@@ -1,6 +1,4 @@
 name: XMC-for-Arduino Release Automation
-permissions:
-  contents: write
 
 on:
   release:
@@ -32,6 +30,8 @@ jobs:
         python release.py build-release ${{ github.ref_name }}
 
     - name: Upload assets
+      permissions:
+        contents: write
       uses: softprops/action-gh-release@v1
       with:
         name: XMC-for-Arduino ${{  github.ref_name  }}
