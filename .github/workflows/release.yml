@@ -37,3 +37,5 @@ jobs:
           pkg_build/*.zip
           pkg_build/package_infineon_index.json
         body: ${{steps.build_changelog.outputs.changelog}}
+        permissions:
+          contents: write
