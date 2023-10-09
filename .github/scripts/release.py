@@ -58,7 +58,7 @@ def get_package_sha256(pkg):
     return hash
 
 def get_latest_package_index_json():
-    return requests.get('https://github.com/Infineon/XMC-for-Arduino/releases/latest/download/package_infineon_index.json').json()
+    return requests.get('https://github.com/boramonideep/XMC-for-Arduino/releases/latest/download/package_infineon_index.json').json()
 
 def get_platform_data_struct_copy(pkg_index):
     return copy.deepcopy(pkg_index['packages'][0]['platforms'][0])
@@ -68,7 +68,7 @@ def set_new_platform_data_fields(platform_data, pkg_name, version):
     platform_data['version'] = str(semver)
     archive_file_name = str(pkg_name) + ".zip"
     platform_data['archiveFileName'] = archive_file_name
-    platform_data['url'] = "https://github.com/Infineon/XMC-for-Arduino/releases/download/" + str(version) + "/" + str(archive_file_name)
+    platform_data['url'] = "https://github.com/boramonideep/XMC-for-Arduino/releases/download/" + str(version) + "/" + str(archive_file_name)
     platform_data['checksum'] ="SHA-256:" + str(get_package_sha256(os.path.join(pkg_assets_build_path, archive_file_name)))
     platform_data['size'] = str(get_package_size(os.path.join(pkg_assets_build_path, archive_file_name)))
 
