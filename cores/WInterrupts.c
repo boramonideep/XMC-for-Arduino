@@ -69,14 +69,6 @@ void CCU40_0_IRQHandler(void)
     }
 }
 
-void CCU41_0_IRQHandler(void)
-{
-    if (interrupt_0_cb)
-    {
-        interrupt_0_cb();
-    }
-}
-
 void CCU40_1_IRQHandler(void)
 {
     if (interrupt_1_cb)
@@ -181,14 +173,11 @@ void attachInterrupt(uint32_t interrupt_num, interrupt_cb_t callback, uint32_t m
 
 # if defined(XMC1400_Arduino_Kit)
             // IRQ source B routed to NVIC            
-            XMC_SCU_SetInterruptControl(IRQ21_IRQn, XMC_SCU_IRQCTRL_CCU41_SR0_IRQ21);
-            NVIC_SetPriority(CCU41_0_IRQn, 3);
-            NVIC_EnableIRQ(CCU41_0_IRQn);                        
-#else            
-            // IRQ source A routed to NVIC     
-            NVIC_SetPriority(CCU40_0_IRQn, 3);
-            NVIC_EnableIRQ(CCU40_0_IRQn);
+            XMC_SCU_SetInterruptControl(IRQ21_IRQn, XMC_SCU_IRQCTRL_CCU41_SR0_IRQ21);                      
 #endif
+        NVIC_SetPriority(CCU40_0_IRQn, 3);
+        NVIC_EnableIRQ(CCU40_0_IRQn);
+        
         }
         else if (pin_irq.irq_num == 1)
         {
@@ -238,12 +227,8 @@ void detachInterrupt(uint32_t interrupt_num)
 #else
 		switch (interrupt_num)
 		{
-			case 0:
-#if defined(XMC1400_Arduino_Kit)
-                NVIC_DisableIRQ(CCU41_0_IRQn);
-#else                            
+			case 0:       
                 NVIC_DisableIRQ(CCU40_0_IRQn);
-#endif                
                 break;
 
             case 1:

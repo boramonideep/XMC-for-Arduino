@@ -115,8 +115,9 @@ extern const uint8_t NUM_ANALOG_INPUTS;
 #define USIC0_0_IRQHandler IRQ9_Handler // UART
 #define USIC0_0_IRQn IRQ9_IRQn
 
-#define CCU41_0_IRQHandler IRQ21_Handler // interrupt 0
-#define CCU41_0_IRQn IRQ21_IRQn
+// INT0 uses CCU41_0 handler, but its the same as CCU40_0 handler
+#define CCU40_0_IRQHandler IRQ21_Handler
+#define CCU40_0_IRQn IRQ21_IRQn
 
 #define CCU40_1_IRQHandler IRQ22_Handler // interrupt 1
 #define CCU40_1_IRQn IRQ22_IRQn
@@ -174,7 +175,7 @@ const uint8_t NUM_DIGITAL = ( sizeof( mapping_port_pin ) / sizeof( XMC_PORT_PIN_
 const XMC_PIN_INTERRUPT_t mapping_interrupt[] =
     {
     /* 0  */    {CCU41, CCU41_CC41, 1, 0, CCU41_IN1_P0_5},
-    /* 1  */    {CCU40, CCU40_CC40, 0, 1, CCU40_IN0_U0C0_DX2INS}
+    /* 1  */    {CCU40, CCU40_CC41, 1, 1, CCU40_IN1_U0C1_DX2INS}
     };
 const uint8_t NUM_INTERRUPT = ( sizeof( mapping_interrupt ) / sizeof( XMC_PIN_INTERRUPT_t ) );
 
