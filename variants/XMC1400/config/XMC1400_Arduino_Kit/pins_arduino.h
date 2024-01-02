@@ -104,10 +104,10 @@ extern const uint8_t NUM_ANALOG_INPUTS;
 #define LED3        26
 #define LED_BUILTIN LED1
 
-#define EXT_INTR_0  3
-#define EXT_INTR_1  25
+#define EXT_INTR_0  2
+#define EXT_INTR_1  3
 
-#define digitalPinToInterrupt(p)    ((p) == 3 ? 0 : ((p) == 25 ? 1 : NOT_AN_INTERRUPT))
+#define digitalPinToInterrupt(p)    ((p) == 2 ? 0 : ((p) == 3 ? 1 : NOT_AN_INTERRUPT))
 
 /* Mapping interrupt handlers. Notice that XMC1400 can have interrupt handlers working in 3 modes, the defines below assumes the mode A.
    For details refer to assembly file and reference manual.
@@ -115,10 +115,10 @@ extern const uint8_t NUM_ANALOG_INPUTS;
 #define USIC0_0_IRQHandler IRQ9_Handler // UART
 #define USIC0_0_IRQn IRQ9_IRQn
 
-#define CCU40_0_IRQHandler IRQ21_Handler // interrupt 1
-#define CCU40_0_IRQn IRQ21_IRQn
+#define CCU41_0_IRQHandler IRQ21_Handler // interrupt 0
+#define CCU41_0_IRQn IRQ21_IRQn
 
-#define CCU40_1_IRQHandler IRQ22_Handler // interrupt 0
+#define CCU40_1_IRQHandler IRQ22_Handler // interrupt 1
 #define CCU40_1_IRQn IRQ22_IRQn
 
 #define USIC0_4_IRQHandler IRQ13_Handler // I2C
@@ -140,8 +140,8 @@ const XMC_PORT_PIN_t mapping_port_pin[] =
     {
     /* 0  */    {XMC_GPIO_PORT1, 2}, // RX                                        P1.2
     /* 1  */    {XMC_GPIO_PORT1, 3}, // TX                                        P1.3
-    /* 2  */    {XMC_GPIO_PORT0 , 5}, // GPIO / LED2 output                       P0.5
-    /* 3  */    {XMC_GPIO_PORT1 , 1}, // External int 0 / PWM40-1 output          P1.1
+    /* 2  */    {XMC_GPIO_PORT0 , 5}, // External int 0 / LED2 output             P0.5
+    /* 3  */    {XMC_GPIO_PORT1 , 1}, // External int 1 / PWM40-1 output          P1.1
     /* 4  */    {XMC_GPIO_PORT1 , 0}, // PWM40-0 output                           P1.0
     /* 5  */    {XMC_GPIO_PORT0 , 2}, // GPIO                                     P0.2
     /* 6  */    {XMC_GPIO_PORT0 , 6}, // PWM41-0 output                           P0.6
@@ -163,7 +163,7 @@ const XMC_PORT_PIN_t mapping_port_pin[] =
     /* 22 */    {XMC_GPIO_PORT2 , 7}, // GPIO / AD_AUX_2 Additional Pin           P2.7
     /* 23 */    {XMC_GPIO_PORT2 , 5}, // GPIO / AD_AUX_3 Additional Pin           P2.5
     /* 24 */    {XMC_GPIO_PORT2 , 2}, // GPIO / AD_AUX_4 Additional Pin           P2.2
-    /* 25 */    {XMC_GPIO_PORT1 , 4}, // External int 1                           P1.4
+    /* 25 */    {XMC_GPIO_PORT1 , 4}, // GPIO                                     P1.4
     /* 26 */    {XMC_GPIO_PORT1 , 5} // LED3 output                               P1.5
     };
 
@@ -173,8 +173,8 @@ const uint8_t NUM_DIGITAL = ( sizeof( mapping_port_pin ) / sizeof( XMC_PORT_PIN_
 
 const XMC_PIN_INTERRUPT_t mapping_interrupt[] =
     {
-    /* 0  */    {CCU40, CCU40_CC41, 1, 1, CCU40_IN1_U0C1_DX2INS},
-    /* 1  */    {CCU40, CCU40_CC40, 0, 0, CCU40_IN0_U0C0_DX2INS}
+    /* 0  */    {CCU41, CCU41_CC41, 1, 0, CCU41_IN1_P0_5},
+    /* 1  */    {CCU40, CCU40_CC40, 0, 1, CCU40_IN0_U0C0_DX2INS}
     };
 const uint8_t NUM_INTERRUPT = ( sizeof( mapping_interrupt ) / sizeof( XMC_PIN_INTERRUPT_t ) );
 
